@@ -13,6 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git 'https://github.com/darshankumar17/eks-cluster-deployment.git'
+            }
         }
     
         stage ("terraform init") {
